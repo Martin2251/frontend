@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
 }
 
 .nav-bar{
@@ -42,4 +43,22 @@
   font-weight: 700;
   color: black;
   margin-left: 5px;
+}
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(68,68,68);
+  min-height: 80vh;
+}
+
+.not-found h2{
+  font-size: 55px;
+}
+
+.not-found p{
+  font-size: 20px;
+
 }
