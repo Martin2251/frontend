@@ -4,7 +4,7 @@ import App from './App';
 import {configureStore} from "@reduxjs/toolkit";
 import {Provider} from "react-redux";
 
-import productsReducer from './features/productsSlice';
+import productsReducer, { productsFetch } from './features/productsSlice';
 
 const store= configureStore({
   reducer:{
@@ -12,6 +12,8 @@ const store= configureStore({
   },
   
 });
+
+store.dispatch(productsFetch());
 
 ReactDOM.render(
   <React.StrictMode>
