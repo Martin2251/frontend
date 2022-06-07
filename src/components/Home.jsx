@@ -1,5 +1,5 @@
 import React from "react";
-import { productsApi, useGetAllProductsQuery } from "../features/productsApi";
+import { useGetAllProductsQuery } from "../features/productsApi";
 
 export const Home = () => {
   const { data, error, isLoading } = useGetAllProductsQuery();
